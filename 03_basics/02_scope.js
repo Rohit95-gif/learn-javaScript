@@ -21,4 +21,17 @@ const variableAb = "rohit"
 
 
  console.log(variableAb);
- 
+//more about the scope of javascript is below//
+
+console.log(addNumber(5));
+function addNumber (num){
+   return num + 1;
+}
+
+//you cna not call function upone the function must you got a arror by node //
+
+const myFuntion = function(numers){
+   return numers + 2
+}
+console.log(myFuntion(5));
+//mustlly you can calll function in below the declaration //
