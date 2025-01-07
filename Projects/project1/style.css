@@ -1,0 +1,98 @@
+/* Reset and base styles */
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; /* Modern font for better readability */
+  box-sizing: border-box;
+}
+
+/* Global body styling */
+body {
+  background-color: #f8f9fa; /* Light background for a clean look */
+  color: #333;  /* Dark text for good contrast */
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Main container */
+.canvas {
+  margin: 40px auto;
+  width: 90%;
+  max-width: 900px;
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px; /* Rounded corners for a softer look */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Improved button styles */
+.button {
+  width: 120px;
+  height: 120px;
+  margin: 20px;
+  border: none;
+  border-radius: 12px;  /* Rounded button edges */
+  display: inline-block;
+  transition: all 0.3s ease; /* Smooth transition on hover */
+  cursor: pointer;
+}
+
+/* Button colors */
+#grey {
+  background: #757575; /* Neutral grey for an elegant touch */
+}
+
+#white {
+  background: #fff;
+  border: 2px solid #ccc;  /* Subtle border for contrast */
+}
+
+#blue {
+  background: #3498db; /* Vibrant blue for a modern look */
+}
+
+#yellow {
+  background: #f39c12; /* Warm yellow for energy */
+}
+
+/* Button hover effects */
+.button:hover {
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+#blue:hover {
+  background: #2980b9; /* Darker blue on hover for contrast */
+}
+
+#yellow:hover {
+  background: #e67e22; /* Darker yellow on hover */
+}
+
+#grey:hover {
+  background: #616161; /* Slightly darker grey on hover */
+}
+
+#white:hover {
+  border-color: #bbb;  /* Slightly darker border on hover */
+}
+
+/* Utility: span to block */
+span {
+  display: block;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .canvas {
+    padding: 20px;
+  }
+
+  .button {
+    width: 80px;
+    height: 80px;
+  }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function outer(){
+        let userName = "rohit";
+       
+        function inner(){
+            console.log(userName);
+            
+        }
+        inner()
+    }
+    outer()
+
+    // console.log(userName)
+    //this is not exicuted by the js engine becouse scopping essue
+</script>
+</html>

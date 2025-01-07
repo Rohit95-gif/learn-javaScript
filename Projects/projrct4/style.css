@@ -1,0 +1,144 @@
+/* Global reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Body styling */
+  body {
+    background-color: #121212; /* Dark background for a modern feel */
+    color: #fff; /* White text for high contrast */
+    font-size: 16px;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Navbar styling */
+  nav {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ff9800; /* Orange color on hover */
+  }
+  
+  /* Wrapper for the game content */
+  #wrapper {
+    background-color: #1f1f1f; /* Darker background for the game container */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #ff9800; /* Vibrant orange color for the title */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #ddd; /* Light grey text for readability */
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-size: 1.2rem;
+    color: #ff9800; /* Orange color for the label */
+    margin-bottom: 8px;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    border: 2px solid #ff9800;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #ff5722; /* Change border color on focus */
+  }
+  
+  input[type="submit"] {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #ff5722; /* Darker orange when hovered */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  /* Styling for result paragraphs */
+  .resultParas {
+    margin-top: 20px;
+  }
+  
+  .resultParas p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 10px;
+  }
+  
+  span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ff9800; /* Highlight important info */
+  }
+  
+  .lowOrHi {
+    font-size: 1rem;
+    color: #ff5722; /* Red color for hints */
+    font-weight: 500;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    input[type="text"], input[type="submit"] {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  }
+  
